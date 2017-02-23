@@ -1,0 +1,32 @@
+html
+	head
+		meta(charset="utf-8")
+		title User Story Generator
+		link(rel="stylesheet", href = "style.css")
+		script(type="text/javascript",src="bower_components/jquery/dist/jquery.min.js")
+		script(type="text/javascript",src="Userstorygenerator.js")
+		link(href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah|Pacifico",rel="stylesheet")
+	body
+		table
+			tr
+				td.storytemplateRow
+					input.template
+					button.templateSetter("data-template"="As {who} i want to {what}, because of {why}") Story (en)
+					button.templateSetter("data-template"="Als {wer} will ich {was}, um {warum}") Story (de)
+					button.templateSetter("data-template"="Als {wer} will ich {was}") Kurz
+					button.templateSetter("data-template"="Vor langer Zeit in einem weit entfernten königreich, da gab es einen {wer} der wollte {was}. Aber er konnte nicht, es war noch nicht erfunden. Deshalb war er immer zu Traurig. Doch eines Takes kam ein toller Entwickler und erfand {was}. Von dort an konnte {wer}, {was}") Geschichte
+					button.templateSetter("data-template"="Angenommen {vorbedingungen} , wen {aktion}  , dann {ergebnis}") Angenommen,..
+
+			tr
+				td
+					h1 Generate a Userstory
+					.mainRow
+			tr
+				td.shareRow
+					.share Share Story
+			tr
+				td.storyRow
+
+	script.
+		x = new Userstorygenerator(".mainRow", ".storyRow", "Als {wer} will ich {was}, um {warum}")
+

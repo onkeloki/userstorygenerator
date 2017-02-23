@@ -1,0 +1,80 @@
+@color1 : #6891D8;
+@color2 : #A8D285;
+@color3 : #FFA433;
+@color4 : #fff;
+
+body {
+  td.storytemplateRow {
+    height           : 4%;
+    background-color : @color4;
+
+  }
+  .template {
+    width : 100%
+  }
+
+  margin           : 0px;
+  padding          : 0px;
+  background-color : @color1;
+  > table {
+    width  : 100%;
+    height : 100%;
+    td {
+      text-align     : center;
+      vertical-align : middle;
+    }
+    .share {
+      display          : inline;
+      font-size        : 40px;
+      font-family      : "Helvetica Neue";
+      margin           : 0px auto;
+      background-color : #efefef;
+      padding          : 10px;
+    }
+  }
+  .shareRow {
+    height : 10%;
+
+  }
+  .mainRow {
+    height : 25%;
+    & > table {
+      margin : 0px auto;
+    }
+  }
+  .storyRow {
+    vertical-align   : top;
+    font-family      : "Architects Daughter";
+    font-size        : 50px;
+    text-align       : center;
+    padding          : 40px;
+    margin           : 20px auto;
+    width            : 90%;
+    background-color : @color4;
+  }
+  label, .variable {
+    font-size   : 30px;
+    font-family : Arial;
+
+  }
+
+  label {
+    padding          : 5px;
+    margin-top       : 10px;
+    background-color : @color4;
+  }
+
+  .variable {
+    color   : @color3;
+    padding : 10px;
+    display : block;
+    width   : 100%;
+    &:focus {
+      border : 10px solid @color2
+    }
+  }
+  .hilight {
+    color : @color3
+  }
+
+}

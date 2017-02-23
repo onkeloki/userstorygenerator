@@ -1,0 +1,40 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>User Story Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="Userstorygenerator.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah|Pacifico" rel="stylesheet"/>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="storytemplateRow">
+          <input class="template"/>
+          <button data-template="As {who} i want to {what}, because of {why}" class="templateSetter">Story (en)</button>
+          <button data-template="Als {wer} will ich {was}, um {warum}" class="templateSetter">Story (de)</button>
+          <button data-template="Als {wer} will ich {was}" class="templateSetter">Kurz</button>
+          <button data-template="Vor langer Zeit in einem weit entfernten königreich, da gab es einen {wer} der wollte {was}. Aber er konnte nicht, es war noch nicht erfunden. Deshalb war er immer zu Traurig. Doch eines Takes kam ein toller Entwickler und erfand {was}. Von dort an konnte {wer}, {was}" class="templateSetter">Geschichte</button>
+          <button data-template="Angenommen {vorbedingungen} , wen {aktion}  , dann {ergebnis}" class="templateSetter">Angenommen,..</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>Generate a Userstory</h1>
+          <div class="mainRow"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="shareRow">
+          <div class="share">Share Story</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="storyRow"></td>
+      </tr>
+    </table>
+  </body>
+  <script>x = new Userstorygenerator(".mainRow", ".storyRow", "Als {wer} will ich {was}, um {warum}")</script>
+</html>
